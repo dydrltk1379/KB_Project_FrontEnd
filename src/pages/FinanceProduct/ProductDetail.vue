@@ -24,7 +24,7 @@
                         <p><strong>기본 금리:</strong> {{ productData.intrRate }}</p>
                     </div>
                     <p><strong>가입 대상:</strong> {{ productData.joinMember ? '제한 있음(서민전용, 일부제한)' : '제한 없음' }}</p>
-                    <p><strong>가입 방법:</strong> {{ productData.intrRate }}</p>
+                    <p><strong>가입 방법:</strong> {{ productData.joinWay }}</p>
                     <p><strong>가입 기간:</strong> {{ productData.saveTrm }}개월</p>
                     <p><strong>저축 금리유형:</strong> {{ productData.intrRateTypeNm }}</p>
                 </div>
@@ -66,9 +66,9 @@ const getProductByNo = async (financeProductNo) => {
         console.log(response.data);
         Object.assign(productData, response.data);
         if (productData.mtrtInt) {
-            if(productData.mtrtInt.includes('|')){
+            if (productData.mtrtInt.includes('|')) {
                 mtrtIntArray.value = productData.mtrtInt.split(' | ');
-            }else{
+            } else {
                 mtrtIntArray.value = [productData.mtrtInt];
             }
             console.log(mtrtIntArray.data);
@@ -116,7 +116,9 @@ const viewProductDetails = () => {
 }
 
 .product-footer {
-    display: flex;             /* Flexbox로 정렬 제어 */
-    justify-content: flex-start; /* 왼쪽 정렬 */
-  }
+    display: flex;
+    /* Flexbox로 정렬 제어 */
+    justify-content: flex-start;
+    /* 왼쪽 정렬 */
+}
 </style>
