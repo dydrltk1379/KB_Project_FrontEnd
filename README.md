@@ -27,8 +27,8 @@
 ## 🛠 기술 스택
 
 - **Frontend**: Vue.js, Vuex, Vue Router, Axios
-- **Backend**: Spring Boot, JPA, MySQL (→ [BackEnd Repo](https://github.com/dydrltk1379/FInNS-BackEnd))
-- **배포**: Netlify (프론트), AWS EC2 (백엔드)
+- **Backend**: Spring, JPA, MySQL (→ [BackEnd Repo](https://github.com/dydrltk1379/KB_project_Back))
+- **배포**: AWS EC2 (백엔드)
 
 ---
 
@@ -52,6 +52,8 @@ src/
 - ├── router/ # 라우터 설정
 - ├── store/ # Vuex 상태 관리
 - └── App.vue # 루트 컴포넌트
+
+---
 
 ## 📈 주요 성과
 
